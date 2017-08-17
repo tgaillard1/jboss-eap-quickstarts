@@ -12,9 +12,15 @@
      </server>
   </servers>
 
-  <mirrors>
-    <!-- ### configured mirrors ### -->
-  </mirrors>
+<! --https://maven.apache.org/guides/mini/guide-mirror-settings.html -- Needs version 2.1 or higher of Maven to use the * value for wildcard repo ID's !>
+<mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>Nexus</name>
+      <url>http://nexus.internal.location.com</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+</mirrors>
 
   <proxies>
     <!-- ### configured http proxy ### -->
